@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>简约卡片风</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-container">
+    <section class="hero">
+      <span class="eyebrow">简约好看 · 浅色卡片</span>
+      <h1>多行列并行布局，信息更集中</h1>
+      <p class="subtitle">卡片风格与简洁结构结合，呈现清新、实用的内容组织方式。</p>
+    </section>
+
+    <section class="cards-grid">
+      <article class="card">
+        <p class="eyebrow">目标</p>
+        <h2>清晰展现重点</h2>
+        <p>每张卡片负责一个核心内容块，让用户快速捕捉关键信息。</p>
+      </article>
+      <article class="card">
+        <p class="eyebrow">方法</p>
+        <h2>并行排布</h2>
+        <p>使用网格布局实现多行多列，页面视觉平衡且便于浏览。</p>
+      </article>
+      <article class="card">
+        <p class="eyebrow">风格</p>
+        <h2>轻盈浅色</h2>
+        <p>浅色背景与柔和边框增强卡片感，保持整体低饱和、舒适阅读。</p>
+      </article>
+      <article class="card">
+        <p class="eyebrow">效果</p>
+        <h2>聚焦转化</h2>
+        <p>简约布局减少干扰，帮助用户在短时间内完成决策。</p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <a class="action" href="#">查看详情</a>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelector('.action').addEventListener('click', function(event) {
+      event.preventDefault();
+      alert('你已进入简约卡片风页面。');
+    });
+  </script>
+</body>
+</html>
