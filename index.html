@@ -1,52 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>简约卡片风</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero to Tech · 个人主页</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/lab.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
+
 <body>
-  <main class="page-container">
-    <section class="hero">
-      <span class="eyebrow">简约好看 · 浅色卡片</span>
-      <h1>多行列并行布局，信息更集中</h1>
-      <p class="subtitle">卡片风格与简洁结构结合，呈现清新、实用的内容组织方式。</p>
-    </section>
+  <div class="app-shell">
+    <div class="page-shell">
+      <main class="page-content">
+        <section class="dashboard-grid">
 
-    <section class="cards-grid">
-      <article class="card">
-        <p class="eyebrow">目标</p>
-        <h2>清晰展现重点</h2>
-        <p>每张卡片负责一个核心内容块，让用户快速捕捉关键信息。</p>
-      </article>
-      <article class="card">
-        <p class="eyebrow">方法</p>
-        <h2>并行排布</h2>
-        <p>使用网格布局实现多行多列，页面视觉平衡且便于浏览。</p>
-      </article>
-      <article class="card">
-        <p class="eyebrow">风格</p>
-        <h2>轻盈浅色</h2>
-        <p>浅色背景与柔和边框增强卡片感，保持整体低饱和、舒适阅读。</p>
-      </article>
-      <article class="card">
-        <p class="eyebrow">效果</p>
-        <h2>聚焦转化</h2>
-        <p>简约布局减少干扰，帮助用户在短时间内完成决策。</p>
-      </article>
-    </section>
+          <!-- ↓↓↓ 顶部 hero：品牌 + 导航 + 大标题 + 副标题 ↓↓↓ -->
+          <!-- 这一整块在 text-lab.html 里几乎一字不差地又抄了一遍 -->
+          <article class="hero-stage panel-full">
+            <div class="hero-topline">
+              <p class="brand-eyebrow">zero to tech</p>
+              <nav class="inline-links hero-nav">
+                <a class="nav-link" href="index.html">个人主页</a>
+                <a class="nav-link" href="text-lab.html">文字实验室</a>
+              </nav>
+            </div>
+            <div class="hero-copy">
+              <h1 class="hero-display">关于我自己</h1>
+              <p class="hero-subtitle">项目，创意，灵感，心得，我的作品</p>
+            </div>
+          </article>
+          <!-- ↑↑↑ hero 结束 ↑↑↑ -->
 
-    <footer class="footer">
-      <a class="action" href="#">查看详情</a>
-    </footer>
-  </main>
+          <article class="panel panel-full featured-work-panel card">
+            <p class="section-kicker">作品</p>
+            <p class="featured-title">文字实验室</p>
+            <p class="featured-copy">拼音和情绪，挖掘中文里的细节</p>
+            <a class="featured-link" href="text-lab.html">
+              <span class="featured-link-label">打开作品</span>
+              <span class="arrow">›</span>
+            </a>
+          </article>
 
-  <script>
-    document.querySelector('.action').addEventListener('click', function(event) {
-      event.preventDefault();
-      alert('你已进入简约卡片风页面。');
-    });
-  </script>
+          <article class="panel panel-full identity-panel card">
+            <div class="identity-item">
+              <p class="section-kicker">座右铭</p>
+              <p class="identity-value identity-quote">已识乾坤大，尤怜草木青</p>
+            </div>
+            <div class="identity-item">
+              <p class="section-kicker">正在学习</p>
+              <p class="identity-value">零到全栈</p>
+            </div>
+          </article>
+
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
 </body>
+
 </html>
